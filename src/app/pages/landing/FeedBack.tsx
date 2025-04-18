@@ -41,7 +41,7 @@ export default function Feedback() {
   };
 
 
-  const settings:any = {
+  const settings = {
     dots: true,
     infinite: true,
     slidesToShow: 3,

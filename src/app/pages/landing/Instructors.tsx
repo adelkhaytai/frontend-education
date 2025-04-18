@@ -46,11 +46,11 @@ export default function Instructors() {
   const indexOfFirstInstructor = indexOfLastInstructor - instructorsPerPage;
   const currentInstructors = instructors.slice(indexOfFirstInstructor, indexOfLastInstructor);
 
-  const handlePageChange = (pageNumber:any) => {
+  const handlePageChange = (pageNumber:number) => {
     setCurrentPage(pageNumber);
   };
 
-  const settings:any = {
+  const settings = {
     dots: true,
     infinite: true,
     slidesToShow: 3,

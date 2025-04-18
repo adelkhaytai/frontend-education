@@ -1,13 +1,12 @@
 'use client';
 import Image from "next/image";
 import { CheckCircle, XCircle } from "lucide-react";
-import { useState } from 'react';
+// import { useState } from 'react';
 
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
 
-const categories = ['All', 'Préparatoire', 'Economie et gestion', 'Droit'];
 
 const packs = [
   {

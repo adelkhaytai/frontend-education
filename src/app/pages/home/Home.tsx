@@ -10,7 +10,7 @@ import Instructors from '../landing/Instructors'
 import Feedback from '../landing/FeedBack'
 import FAQSection from '../landing/FaqSection'
 import Contact from '../landing/Contact'
-import Test from '../landing/Test'
+// import Test from '../landing/Test'
 
 
 

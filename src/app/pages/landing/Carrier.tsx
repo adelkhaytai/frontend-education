@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import React from 'react'
 
 export default function 
@@ -20,7 +21,7 @@ export default function
     
     {/* Card 1 */}
     <div className="rounded-xl overflow-hidden border border-blue-500 shadow-sm hover:shadow-lg transition">
-      <img
+      <Image
         src="/math.jpg" // à remplacer
         alt="Préparatoire"
         className="w-full h-48 object-cover"
@@ -33,7 +34,7 @@ export default function
 
     {/* Card 2 */}
     <div className="rounded-xl overflow-hidden border border-blue-500 shadow-sm hover:shadow-lg transition">
-      <img
+      <Image
         src="/economie.avif" // à remplacer
         alt="Economie et gestion"
         className="w-full h-48 object-cover"
@@ -46,7 +47,7 @@ export default function
 
     {/* Card 3 */}
     <div className="rounded-xl overflow-hidden border border-blue-500 shadow-sm hover:shadow-lg transition">
-      <img
+      <Image
         src="droit.jpg" // à remplacer
         alt="Droit"
         className="w-full h-48 object-cover"

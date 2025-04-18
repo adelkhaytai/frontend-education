@@ -3,8 +3,9 @@ import React from 'react'
 import Slider from 'react-slick';
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import Image from 'next/image';
 
-const data:any[] = [
+const data = [
     {
       id: 1,
       name: 'Lina Khraissi',
@@ -37,7 +38,7 @@ const data:any[] = [
   ];
   
   
-  const settings:any = {
+  const settings = {
     dots: true,
     infinite: true,
     slidesToShow: 3,
@@ -83,7 +84,7 @@ export default function Test() {
             {data.map((d)=>(
                 <div className='bg-light h-[450px] rounded-xl'>
                     <div className='h-56 rounded-t-xl bg-amber-900 flex justify-center items-center'>
-                        <img src={d.image} alt="" className='h-44 w-44 rounded-full' />
+                        <Image src={d.image} alt="" className='h-44 w-44 rounded-full' />
                     </div>
                     <div className='flex flex-col justify-center items-center gap-4 p-4'>
                         <p className='text-xl font-semibold'>{d.name}</p>
