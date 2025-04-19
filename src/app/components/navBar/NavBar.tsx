@@ -12,7 +12,9 @@ const NavBar = () => {
   const [isUserMenuOpen, setIsUserMenuOpen] = useState(false);
 
   return (
-    <nav className=" shadow-md p-5 ">
+    <>
+    <div className="w-full h-20"></div>
+    <nav className="fixed top-0 left-0 bg-blue-400 text-black w-full z-50 shadow-md p-5">
       <div className="max-w-7xl mx-auto px-8 sm:px-6 lg:px-8">
         <div className="flex justify-between h-16 items-center">
           {/* Logo */}
@@ -125,34 +127,24 @@ const NavBar = () => {
       {/* Mobile Dropdown Menu */}
       {isOpen && (
         <div className="md:hidden px-4 pb-4 space-y-2">
-          <a
-            href="#"
-            className="block hover:text-blue-600"
-          >
+          <a href="#" className="block hover:text-blue-600">
             Profile
           </a>
-          <a
-            href="#"
-            className="block hover:text-blue-600"
-          >
-             A Propre
+          <a href="#" className="block hover:text-blue-600">
+            A Propre
           </a>
-          <a
-            href="#"
-            className="block hover:text-blue-600"
-          >
+          <a href="#" className="block hover:text-blue-600">
             Nos Offre
           </a>
-          <a
-            href="#"
-            className="block hover:text-blue-600"
-          >
-             Nos enseignants
+          <a href="#" className="block hover:text-blue-600">
+            Nos enseignants
           </a>
         </div>
       )}
     </nav>
+  </>
   );
+
 };
 
 export default NavBar;

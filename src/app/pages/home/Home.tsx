@@ -17,9 +17,7 @@ import Contact from '../landing/Contact'
 export default function Home() {
   return (
     <div className="">
-      <div>
      <Welcome/>
-     {/* <Test/> */}
      <Carrier/>
       <Courses/>                     
      <OurWork/>
@@ -30,7 +28,6 @@ export default function Home() {
      <Feedback/>                     
      <FAQSection/>
      <Contact/>
-      </div>
     </div>
   )
 }
